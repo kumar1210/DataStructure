@@ -8,9 +8,22 @@ public class TestSinglyLinkList {
 
 		TestSinglyLinkList testObj = new TestSinglyLinkList();
 		//testObj.testLength();
-		testObj.testinsertNodeAtStart();
+		//testObj.testinsertNodeAtStart();
+		testObj.testinsertNodeAtLast();
 		
+	}
+	
+	public void testinsertNodeAtLast() {
 		
+		SinglyLinkList<Integer>  start = new SinglyLinkList<Integer>();
+		start.setData(5);
+		SinglyLinkList<Integer> node1 = new SinglyLinkList<>(6);
+		start.setPointer(node1);
+		start.printAllElements();
+		SinglyLinkList<Integer> node2 = new SinglyLinkList<>(4);
+		start.insertNodeAtLast(node2);
+		start.printAllElements();
+		start.insertNodeAtLast(null);
 	}
 
 	public void testinsertNodeAtStart() {

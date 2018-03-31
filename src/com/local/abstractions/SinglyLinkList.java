@@ -35,6 +35,25 @@ public class SinglyLinkList<E> {
 	
 	
 	/***
+	 * <br> this method is to insert a node 
+	 * 		at the end of the linklist. <br>
+	 * @param node
+	 */
+	public void insertNodeAtLast(SinglyLinkList<E> node) throws NullPointerException {
+
+		if (null == node) {
+			throw new NullPointerException("Node to entered at last is an empty element.");
+		} else {
+			SinglyLinkList<E> head = this;
+			
+			while(null != head.pointer) {
+				head = head.pointer;
+			}
+			head.pointer= node;
+		}
+	}
+	
+	/***
 	 * 
 	 * @param node
 	 * @return
