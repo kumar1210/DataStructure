@@ -40,7 +40,7 @@ public class LinkListStack<E> implements IStack<E> {
 	public E pop() {
 
 		if(isStackEmpty()) {
-			return null;
+			return (E)null;
 		}else {
 			E obj =list.get(0);
 			list.remove(0);
