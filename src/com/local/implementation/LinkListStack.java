@@ -25,7 +25,7 @@ public class LinkListStack<E> implements IStack<E> {
 	@Override
 	public void push(E obj) {
 		
-		list.add(obj);
+		list.add(0, obj);
 	}
 
 	@Override
@@ -70,6 +70,12 @@ public class LinkListStack<E> implements IStack<E> {
 	public boolean isStackFull() {
 
 		return false;
+	}
+
+	@Override
+	public void close() throws Exception {
+
+		System.out.println("\n Resources has been managed.");
 	}
 
 }

@@ -58,4 +58,10 @@ public class ArrayStack<E> implements IStack<E>{
 		return pos;
 	}
 
+	@Override
+	public void close() throws Exception {
+
+		System.out.println("Resources has been managed.");
+	}
+
 }

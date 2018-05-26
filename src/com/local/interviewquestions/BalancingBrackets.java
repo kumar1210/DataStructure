@@ -20,13 +20,14 @@ public class BalancingBrackets {
 	private static char MIDDLE_RB = '}';
 	private static char LOWER_RB  = ')';
 	private static char UPPER_RB  = ']';
-
+	
+	
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 
-		System.out.println("Enter your choice : \n 1. balance Braces");
+		System.out.println("Enter your choice : \n 1. balance Braces \n");
 		Scanner in = new Scanner(System.in);
 		String choice = in.next();
 		//if(choice.)

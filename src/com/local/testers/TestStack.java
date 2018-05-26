@@ -25,6 +25,12 @@ public class TestStack {
 		System.out.println(stackObj.isStackEmpty());
 		System.out.println(stackObj.pop());
 		System.out.println(stackObj.isStackEmpty());
+		
+		try (IStack<String> stackObj1 = new LinkListStack<String>()) {
+			
+		} catch (Exception ex) {
+			
+		}
 	}
 
 }
